@@ -1,0 +1,598 @@
+{
+  "Uuid": "33790953-9d0e-4c4b-9e27-227e2b095e1c",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "01-bnh",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "e5c46e5d142648daa06e415133f5c111",
+      "Name": "input 1",
+      "Type": "number",
+      "Value": "1",
+      "MaximumValue": 5.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.01,
+      "NumberType": "Double",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "Id": "9cc8c8c0b2a04166be734cbe7ff2e605",
+      "Name": "input 2",
+      "Type": "number",
+      "Value": "2",
+      "MaximumValue": 3.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.01,
+      "NumberType": "Double",
+      "Description": "A slider that produces numeric values."
+    }
+  ],
+  "Outputs": [
+    {
+      "Id": "50b34159b50643abb8ac0393e3a9c188",
+      "Name": "Output-01",
+      "Type": "float",
+      "InitialValue": "20",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "Id": "529e1d6374f04ed497db84392ee8f912",
+      "Name": "Output-02",
+      "Type": "float",
+      "InitialValue": "25",
+      "Description": "Visualize the output of node."
+    }
+  ],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "(4 * x * x) + (4 * y * y);\n((x - 5) * (x - 5)) + ((y - 5) * (y - 5));",
+      "Id": "15febd271fbe4c6bbe4e7d5e923c13b1",
+      "Inputs": [
+        {
+          "Id": "4d6e49e7b72d4946b97e88d5b5623fcb",
+          "Name": "x",
+          "Description": "x",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b978ac22e9f74ccf9ccf05121781cf3d",
+          "Name": "y",
+          "Description": "y",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a37a257d594d44ff960913bdaf356388",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1506625013784bdba4a1db324a03b527",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 5.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.01,
+      "InputValue": 1.0,
+      "Id": "e5c46e5d142648daa06e415133f5c111",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b81cac29e11e4a77a2574c6319b5d174",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 3.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.01,
+      "InputValue": 2.0,
+      "Id": "9cc8c8c0b2a04166be734cbe7ff2e605",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f87e46de93274df6a971fc5e38eb358a",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "50b34159b50643abb8ac0393e3a9c188",
+      "Inputs": [
+        {
+          "Id": "1e3bf90a95f744269878610a1c66676a",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f10d2edc8c854258991453b60c843059",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "529e1d6374f04ed497db84392ee8f912",
+      "Inputs": [
+        {
+          "Id": "3b34fac712e84589b9434b40ab342b91",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "47c113a6270a4c2b92dccae9eef44d01",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "a37a257d594d44ff960913bdaf356388",
+      "End": "1e3bf90a95f744269878610a1c66676a",
+      "Id": "ceb42b047de0426c852a1a1391fe9174"
+    },
+    {
+      "Start": "1506625013784bdba4a1db324a03b527",
+      "End": "3b34fac712e84589b9434b40ab342b91",
+      "Id": "94179edbe3924501a096e17b0f3874c7"
+    },
+    {
+      "Start": "b81cac29e11e4a77a2574c6319b5d174",
+      "End": "4d6e49e7b72d4946b97e88d5b5623fcb",
+      "Id": "5de2d172925b40a2ad80a453573555aa"
+    },
+    {
+      "Start": "f87e46de93274df6a971fc5e38eb358a",
+      "End": "b978ac22e9f74ccf9ccf05121781cf3d",
+      "Id": "02fbdb788261442b8227af413da2ce77"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.2.6826",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -48.096048095788689,
+      "EyeY": 52.104052103771082,
+      "EyeZ": 232.46423246297866,
+      "LookX": 48.096048095788689,
+      "LookY": -52.104052103771082,
+      "LookZ": -232.46423246297866,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "15febd271fbe4c6bbe4e7d5e923c13b1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 379.80641715486627,
+        "Y": 296.462689020898
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "input 1",
+        "Id": "e5c46e5d142648daa06e415133f5c111",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -18.556327234371395,
+        "Y": 270.4143662055348
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "input 2",
+        "Id": "9cc8c8c0b2a04166be734cbe7ff2e605",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -18.556327234371395,
+        "Y": 351.01671072061191
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Output-01",
+        "Id": "50b34159b50643abb8ac0393e3a9c188",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": true,
+        "Excluded": false,
+        "X": 871.73037540225016,
+        "Y": 249.69829435832625
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Output-02",
+        "Id": "529e1d6374f04ed497db84392ee8f912",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": true,
+        "Excluded": false,
+        "X": 870.18679819874694,
+        "Y": 357.17598341595021
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "fb55fe0c78b841c09597d767b6d342d4",
+        "Title": "BnH\r\nRefinery Graph Example",
+        "Nodes": [
+          "fab55fc954ff42f09d71dbc8a13526f5",
+          "b053ad088072416d9173fe830702d7b7",
+          "f6502c15b7434904943991ee586aa5d0",
+          "ce2bfcacd7ab4172bcef7a1f78db8ef9",
+          "c03fdcba56d64251b75deb22d78ce6d5",
+          "3f7276a6a59240b5a2a5ce1727c8026e",
+          "662684fa002d4c9c92845b724d1de802"
+        ],
+        "Left": -1037.8557648225651,
+        "Top": 17.117719519996285,
+        "Width": 632.23562714206719,
+        "Height": 570.02989676309926,
+        "FontSize": 48.0,
+        "InitialTop": 142.11771951999629,
+        "InitialHeight": 411.02989676309926,
+        "TextblockHeight": 115.0,
+        "Background": "#FFFFFFFF"
+      },
+      {
+        "Id": "d4087cfa067848c5aa6f9736a955c3f2",
+        "Title": "",
+        "Nodes": [
+          "319aef352f264c419ddcd22c6b8129ab"
+        ],
+        "Left": -401.39910690622992,
+        "Top": 458.36727093872025,
+        "Width": 314.0,
+        "Height": 132.0,
+        "FontSize": 14.0,
+        "InitialTop": 488.36727093872025,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 20.0,
+        "Background": "#FFFFC999"
+      },
+      {
+        "Id": "b0fee1306b2f4199b3939e53c76beaa8",
+        "Title": "",
+        "Nodes": [
+          "14b2fe298a69439bb2a9b264fc7dd339"
+        ],
+        "Left": -401.39910690622992,
+        "Top": 297.68558544420478,
+        "Width": 314.0,
+        "Height": 146.5,
+        "FontSize": 14.0,
+        "InitialTop": 327.68558544420478,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 20.0,
+        "Background": "#FFB9F9E1"
+      },
+      {
+        "Id": "8c3278dbd73a4e93ba6e1ee74db4a31e",
+        "Title": "",
+        "Nodes": [
+          "a38b9302560f4cbfabfa123810003d34"
+        ],
+        "Left": -401.39910690623,
+        "Top": 141.332501080579,
+        "Width": 314.0,
+        "Height": 146.5,
+        "FontSize": 14.0,
+        "InitialTop": 171.332501080579,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 20.0,
+        "Background": "#FFFFB8D8"
+      },
+      {
+        "Id": "0872f611bb534349927dbe9889f13d96",
+        "Title": "Input:\r\nChangable variables",
+        "Nodes": [
+          "9cc8c8c0b2a04166be734cbe7ff2e605",
+          "e5c46e5d142648daa06e415133f5c111",
+          "5becb877398a4e2cb95f6b5be9dac6f6"
+        ],
+        "Left": -28.556327234371395,
+        "Top": 74.832501080579,
+        "Width": 319.5,
+        "Height": 344.18420964003292,
+        "FontSize": 36.0,
+        "InitialTop": 171.332501080579,
+        "InitialHeight": 324.68420964003292,
+        "TextblockHeight": 86.5,
+        "Background": "#FFFFB8D8"
+      },
+      {
+        "Id": "2c49408db27d4ab4960703dba3a9b60d",
+        "Title": "Output\r\nOutput information that can be used to filter results in Refinery",
+        "Nodes": [
+          "50b34159b50643abb8ac0393e3a9c188",
+          "529e1d6374f04ed497db84392ee8f912",
+          "5bbf18a925204fea9f709963649f0be3"
+        ],
+        "Left": 860.18679819874694,
+        "Top": 66.698294358326251,
+        "Width": 417.17197619264812,
+        "Height": 399.47768905762393,
+        "FontSize": 36.0,
+        "InitialTop": 249.69829435832625,
+        "InitialHeight": 252.47768905762396,
+        "TextblockHeight": 173.0,
+        "Background": "#FFFFC999"
+      },
+      {
+        "Id": "533cf5144e9b48ff90ded2f3351eea88",
+        "Title": "Data:\r\nCalculations",
+        "Nodes": [
+          "15febd271fbe4c6bbe4e7d5e923c13b1"
+        ],
+        "Left": 369.80641715486627,
+        "Top": 199.96268902089798,
+        "Width": 416.0,
+        "Height": 198.5,
+        "FontSize": 36.0,
+        "InitialTop": 296.462689020898,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 86.5,
+        "Background": "#FFB9F9E1"
+      },
+      {
+        "Id": "fab55fc954ff42f09d71dbc8a13526f5",
+        "Title": "DYNAMO PROJECT\r\n________________________________________________________\r\n\r\n01-bnh.dyn",
+        "Nodes": [],
+        "Left": -1027.8557648225651,
+        "Top": 142.11771951999629,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "b053ad088072416d9173fe830702d7b7",
+        "Title": "ASSOCIATED FILE(S)      \r\n________________________________________________________\r\n\r\nN/A",
+        "Nodes": [],
+        "Left": -1027.8557648225651,
+        "Top": 232.46101844102952,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "f6502c15b7434904943991ee586aa5d0",
+        "Title": "AUTHOR(S) / CREATION DATE\r\n________________________________________________________\r\n\r\nRefinery Team and The Proving Ground / Dec 2018",
+        "Nodes": [],
+        "Left": -1027.8557648225651,
+        "Top": 322.80431736206231,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "ce2bfcacd7ab4172bcef7a1f78db8ef9",
+        "Title": "DESCRIPTION   \r\n________________________________________________________\r\n\r\nThe bnh graph refers to the Bihn and Korn function that seeks to optomise the results of multi-objective algorithm. In this case we want to either maximise or minimise our numeric outputs.\r\n\r\nThis graph is used to showcase how Refinery works with a Pareto curve output when executed. ",
+        "Nodes": [],
+        "Left": -1027.8557648225651,
+        "Top": 413.14761628309554,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "c03fdcba56d64251b75deb22d78ce6d5",
+        "Title": "DYNAMO VERSION\r\n________________________________________________________\r\n\r\n2.0.2",
+        "Nodes": [],
+        "Left": -714.62013768049792,
+        "Top": 143.27917160332538,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "3f7276a6a59240b5a2a5ce1727c8026e",
+        "Title": "ADDITIONAL COMMENTS\r\n________________________________________________________\r\n\r\nN/A",
+        "Nodes": [],
+        "Left": -714.6201376805011,
+        "Top": 322.80431736206231,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "662684fa002d4c9c92845b724d1de802",
+        "Title": "REQUIRED DYNAMO PACKAGES\r\n________________________________________________________\r\n\r\nN/A",
+        "Nodes": [],
+        "Left": -714.6201376805011,
+        "Top": 231.93572736379645,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "a38b9302560f4cbfabfa123810003d34",
+        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nGreen indicates Variables that can be altered per project and must be set accordingly before running the script.",
+        "Nodes": [],
+        "Left": -391.39910690623,
+        "Top": 171.332501080579,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "319aef352f264c419ddcd22c6b8129ab",
+        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nRed indicates checking nodes to ensure the script has deployed correctly.",
+        "Nodes": [],
+        "Left": -391.39910690622992,
+        "Top": 488.36727093872025,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "14b2fe298a69439bb2a9b264fc7dd339",
+        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nOrange indicates the working of the script. No changes should be made in these groups unless advised.",
+        "Nodes": [],
+        "Left": -391.39910690622992,
+        "Top": 327.68558544420478,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "5becb877398a4e2cb95f6b5be9dac6f6",
+        "Title": "NOTE:\r\nIn order to see an 'Input' in Refinery, you have to right-click on a compatible node and check the 'Is Input' option. Rename the node to see a legible input name in Refinery.",
+        "Nodes": [],
+        "Left": -18.556327234371395,
+        "Top": 171.332501080579,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "5bbf18a925204fea9f709963649f0be3",
+        "Title": "NOTE: \r\nIn order to see an 'Output' in Refinery, you have to right-click on a compatible node and check the 'Is \r\nOutput' option. Rename the node to see a legible output name in Refinery.",
+        "Nodes": [],
+        "Left": 979.85877439139506,
+        "Top": 255.24128783690404,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 3121.0499389037764,
+    "Y": -626.1465832622315,
+    "Zoom": 2.2996341851403814
+  }
+}
