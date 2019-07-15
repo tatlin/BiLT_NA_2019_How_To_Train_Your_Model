@@ -2,7 +2,7 @@
   "Uuid": "edf2548c-6fa2-47df-8b45-6f0b881e2ad2",
   "IsCustomNode": false,
   "Description": null,
-  "Name": "2d Hill Climbing 5 point",
+  "Name": "2d Hill Climbing 5 point FINISH",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -1864,7 +1864,7 @@
         "FontSize": 14.0,
         "InitialTop": 334.73096427909945,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFFF7BAC"
       },
       {
@@ -1880,7 +1880,7 @@
         "FontSize": 14.0,
         "InitialTop": 174.04927878458398,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFFFAA45"
       },
       {
@@ -1918,7 +1918,7 @@
         "FontSize": 14.0,
         "InitialTop": 17.696194420958477,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFC1D676"
       },
       {
@@ -2062,8 +2062,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 465.31808562795629,
-    "Y": 113.24090835185496,
-    "Zoom": 0.39767270123469278
+    "X": -93.631897287963056,
+    "Y": 46.747694068559895,
+    "Zoom": 0.63551718448892613
   }
 }
