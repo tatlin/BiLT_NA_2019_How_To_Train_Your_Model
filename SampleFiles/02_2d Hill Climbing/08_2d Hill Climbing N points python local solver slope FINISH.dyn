@@ -2,7 +2,7 @@
   "Uuid": "edf2548c-6fa2-47df-8b45-6f0b881e2ad2",
   "IsCustomNode": false,
   "Description": null,
-  "Name": "2d Hill Climbing N points python local solver slope FINISH",
+  "Name": "08_2d Hill Climbing N points python local solver slope FINISH",
   "ElementResolver": {
     "ResolutionMap": {
       "Curve": {
@@ -35,7 +35,7 @@
       "Id": "24132345029a45d4b673fa8739f17950",
       "Name": "Max Iterations",
       "Type": "number",
-      "Value": "200",
+      "Value": "0",
       "MaximumValue": 200.0,
       "MinimumValue": 0.0,
       "StepValue": 1.0,
@@ -48,14 +48,14 @@
       "Id": "ca3b86855265409b8127a61525bc3fc8",
       "Name": "SumZHeights",
       "Type": "float",
-      "InitialValue": "20435.1667375778",
+      "InitialValue": "17010.9145342533",
       "Description": "Visualize the output of node."
     },
     {
       "Id": "c559639d2f744792b22731067b227b0f",
       "Name": "SumYDelta",
       "Type": "float",
-      "InitialValue": "12465.2467206774",
+      "InitialValue": "13699.9999999996",
       "Description": "Visualize the output of node."
     }
   ],
@@ -1024,7 +1024,7 @@
       "ConcreteType": "CoreNodeModels.Input.IntegerSlider, CoreNodeModels",
       "NodeType": "NumberInputNode",
       "NumberType": "Integer",
-      "InputValue": 200,
+      "InputValue": 0,
       "MaximumValue": 200,
       "MinimumValue": 0,
       "StepValue": 1,
@@ -1239,12 +1239,12 @@
     },
     "Camera": {
       "Name": "Background Preview",
-      "EyeX": 401.96000842381659,
-      "EyeY": 68.177792700432022,
-      "EyeZ": 167.99823682538613,
-      "LookX": -375.500055845803,
-      "LookY": 81.113508829418649,
-      "LookZ": -40.721867909446487,
+      "EyeX": 222.77919575603997,
+      "EyeY": 30.788570257191907,
+      "EyeZ": 14.99216719126521,
+      "LookX": -198.16336423001266,
+      "LookY": 42.806187492922838,
+      "LookZ": -21.490229407528602,
       "UpX": 0.41227598967886314,
       "UpY": 0.90996127087656908,
       "UpZ": 0.044710108913626839
@@ -1845,8 +1845,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -1548.9928293779108,
-    "Y": 407.88973651568222,
-    "Zoom": 0.94829357673996562
+    "X": -653.29881611710653,
+    "Y": 451.16133540104596,
+    "Zoom": 0.70820398461523881
   }
 }

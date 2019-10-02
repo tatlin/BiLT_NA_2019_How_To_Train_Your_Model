@@ -2,7 +2,7 @@
   "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
   "IsCustomNode": false,
   "Description": "",
-  "Name": "3BoxVolumeSurfaceAreaOTx-Simple",
+  "Name": "3BoxVolumeSurfaceArea-SimpleBiLT",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -11,7 +11,7 @@
       "Id": "b1a0f7d632a649659ad512529efeb2af",
       "Name": "LocationX Box3",
       "Type": "number",
-      "Value": "43.1065029404327",
+      "Value": "20.1065029404327",
       "MaximumValue": 70.0,
       "MinimumValue": 20.106502940432726,
       "StepValue": 1.0,
@@ -22,7 +22,7 @@
       "Id": "0cf69586e89248b4bbe184523402f436",
       "Name": "LocationY Box2",
       "Type": "number",
-      "Value": "38",
+      "Value": "39",
       "MaximumValue": 50.0,
       "MinimumValue": 0.0,
       "StepValue": 1.0,
@@ -33,7 +33,7 @@
       "Id": "b09c8795409548328c6a1f225b75ab1d",
       "Name": "LocationX Box2",
       "Type": "number",
-      "Value": "22",
+      "Value": "41",
       "MaximumValue": 50.0,
       "MinimumValue": 0.0,
       "StepValue": 1.0,
@@ -44,9 +44,9 @@
       "Id": "3d1033c25ae94905822828b149c88fe2",
       "Name": "Height Box 1",
       "Type": "number",
-      "Value": "115.707632809613",
+      "Value": "179.707632809613",
       "MaximumValue": 200.0,
-      "MinimumValue": 19.707632809612694,
+      "MinimumValue": 19.7076328096127,
       "StepValue": 1.0,
       "NumberType": "Double",
       "Description": "A slider that produces numeric values."
@@ -55,7 +55,7 @@
       "Id": "1b696315f21d467dbe99b7efb19868c1",
       "Name": "Height Box 2",
       "Type": "number",
-      "Value": "44",
+      "Value": "153",
       "MaximumValue": 200.0,
       "MinimumValue": 20.0,
       "StepValue": 1.0,
@@ -66,7 +66,7 @@
       "Id": "b27e893594024743a6b1c7b1d80a710f",
       "Name": "Height Box 3",
       "Type": "number",
-      "Value": "78",
+      "Value": "166",
       "MaximumValue": 200.0,
       "MinimumValue": 20.0,
       "StepValue": 1.0,
@@ -77,7 +77,7 @@
       "Id": "4ec8718ed7e14b8da98c6a43be4cec19",
       "Name": "LocationY Box3",
       "Type": "number",
-      "Value": "20.4822356329943",
+      "Value": "46.4822356329943",
       "MaximumValue": 70.0,
       "MinimumValue": 20.482235632994332,
       "StepValue": 1.0,
@@ -90,14 +90,14 @@
       "Id": "ed096ab2c6bc40609cc6aeb4d33bfad4",
       "Name": "Surface Area",
       "Type": "float",
-      "InitialValue": "46812.3649698652",
+      "InitialValue": "76622.3142024736",
       "Description": "Visualize the output of node."
     },
     {
       "Id": "848b941c81034d72a094bfbee5196128",
       "Name": "Volume",
       "Type": "float",
-      "InitialValue": "525958.243256701",
+      "InitialValue": "1029665.62394698",
       "Description": "Visualize the output of node."
     }
   ],
@@ -253,7 +253,7 @@
       "MaximumValue": 70.0,
       "MinimumValue": 20.106502940432726,
       "StepValue": 1.0,
-      "InputValue": 43.1065029404327,
+      "InputValue": 20.106502940432726,
       "Id": "b1a0f7d632a649659ad512529efeb2af",
       "Inputs": [],
       "Outputs": [
@@ -277,7 +277,7 @@
       "MaximumValue": 50.0,
       "MinimumValue": 0.0,
       "StepValue": 1.0,
-      "InputValue": 38.0,
+      "InputValue": 39.0,
       "Id": "0cf69586e89248b4bbe184523402f436",
       "Inputs": [],
       "Outputs": [
@@ -301,7 +301,7 @@
       "MaximumValue": 50.0,
       "MinimumValue": 0.0,
       "StepValue": 1.0,
-      "InputValue": 22.0,
+      "InputValue": 41.0,
       "Id": "b09c8795409548328c6a1f225b75ab1d",
       "Inputs": [],
       "Outputs": [
@@ -514,9 +514,9 @@
       "NodeType": "NumberInputNode",
       "NumberType": "Double",
       "MaximumValue": 200.0,
-      "MinimumValue": 19.707632809612694,
+      "MinimumValue": 19.7076328096127,
       "StepValue": 1.0,
-      "InputValue": 115.70763280961269,
+      "InputValue": 179.7076328096127,
       "Id": "3d1033c25ae94905822828b149c88fe2",
       "Inputs": [],
       "Outputs": [
@@ -540,7 +540,7 @@
       "MaximumValue": 200.0,
       "MinimumValue": 20.0,
       "StepValue": 1.0,
-      "InputValue": 44.0,
+      "InputValue": 153.0,
       "Id": "1b696315f21d467dbe99b7efb19868c1",
       "Inputs": [],
       "Outputs": [
@@ -564,7 +564,7 @@
       "MaximumValue": 200.0,
       "MinimumValue": 20.0,
       "StepValue": 1.0,
-      "InputValue": 78.0,
+      "InputValue": 166.0,
       "Id": "b27e893594024743a6b1c7b1d80a710f",
       "Inputs": [],
       "Outputs": [
@@ -766,7 +766,7 @@
       "MaximumValue": 70.0,
       "MinimumValue": 20.482235632994332,
       "StepValue": 1.0,
-      "InputValue": 20.482235632994332,
+      "InputValue": 46.482235632994332,
       "Id": "4ec8718ed7e14b8da98c6a43be4cec19",
       "Inputs": [],
       "Outputs": [
@@ -1123,9 +1123,9 @@
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
-      "HasRunWithoutCrash": false,
+      "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.2.6826",
+      "Version": "2.0.3.8810",
       "RunType": "Automatic",
       "RunPeriod": "1000"
     },
@@ -1309,8 +1309,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": true,
         "Excluded": false,
-        "X": 1024.505043694792,
-        "Y": -179.55007637326403
+        "X": 1041.5851116077263,
+        "Y": -178.41140517906842
       },
       {
         "ShowGeometry": true,
@@ -1329,7 +1329,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": true,
         "Excluded": false,
-        "X": 1028.9493813375545,
+        "X": 1039.1974220853151,
         "Y": -60.667451685969496
       },
       {
@@ -1412,7 +1412,7 @@
         "Height": 520.25205897986473,
         "FontSize": 36.0,
         "InitialTop": -178.89767782485592,
-        "InitialHeight": 598.77837728250768,
+        "InitialHeight": 544.25205897986473,
         "TextblockHeight": 43.0,
         "Background": "#FFFF7BAC"
       },
@@ -1423,12 +1423,12 @@
           "ed096ab2c6bc40609cc6aeb4d33bfad4",
           "848b941c81034d72a094bfbee5196128"
         ],
-        "Left": 1014.505043694792,
-        "Top": -232.55007637326403,
-        "Width": 172.44433764276255,
-        "Height": 280.88262468729454,
+        "Left": 1029.1974220853151,
+        "Top": -231.41140517906842,
+        "Width": 170.38768952241116,
+        "Height": 279.74395349309896,
         "FontSize": 36.0,
-        "InitialTop": -179.55007637326403,
+        "InitialTop": -178.41140517906842,
         "InitialHeight": 263.88262468729454,
         "TextblockHeight": 43.0,
         "Background": "#FFFFAA45"
@@ -1463,7 +1463,7 @@
         "Height": 225.66692015824037,
         "FontSize": 36.0,
         "InitialTop": 186.86265012142576,
-        "InitialHeight": 224.66692015824032,
+        "InitialHeight": 224.66692015824037,
         "TextblockHeight": 43.0,
         "Background": "#FF48B9FF"
       },
@@ -1490,13 +1490,13 @@
         "Height": 627.50005873843406,
         "FontSize": 36.0,
         "InitialTop": -176.71571977434826,
-        "InitialHeight": 631.21333333333337,
+        "InitialHeight": 626.50005873843406,
         "TextblockHeight": 43.0,
         "Background": "#FFB9F9E1"
       }
     ],
-    "X": 620.05003272964768,
-    "Y": 164.91065540126939,
-    "Zoom": 0.60100590086598182
+    "X": 516.92741180667258,
+    "Y": 292.281883999639,
+    "Zoom": 0.76125146342341476
   }
 }

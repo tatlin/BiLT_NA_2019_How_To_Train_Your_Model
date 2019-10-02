@@ -2,7 +2,7 @@
   "Uuid": "edf2548c-6fa2-47df-8b45-6f0b881e2ad2",
   "IsCustomNode": false,
   "Description": null,
-  "Name": "2d Hill Climbing 1 point START",
+  "Name": "01_2d Hill Climbing 1 point START",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -11,7 +11,51 @@
       "Id": "f3b80d60acc3475293793b2a46450733",
       "Name": "pt0 delta y",
       "Type": "number",
-      "Value": "41.4",
+      "Value": "88.7",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "NumberType": "Double",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "Id": "142c5c517fb14c7fb734c255d88b0e4c",
+      "Name": "pt1 delta y",
+      "Type": "number",
+      "Value": "85",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "NumberType": "Double",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "Id": "44ec22588f654f2abf6310caaac49e80",
+      "Name": "pt2 delta y",
+      "Type": "number",
+      "Value": "80",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "NumberType": "Double",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "Id": "f0414b98c7d7469d8f30d046a07ec036",
+      "Name": "pt3 delta y",
+      "Type": "number",
+      "Value": "89.4",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "NumberType": "Double",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "Id": "33e68d086ce04836ad955aff537e61be",
+      "Name": "pt4 delta y",
+      "Type": "number",
+      "Value": "86.2",
       "MaximumValue": 100.0,
       "MinimumValue": 0.0,
       "StepValue": 0.1,
@@ -24,7 +68,14 @@
       "Id": "c559639d2f744792b22731067b227b0f",
       "Name": "SumYDelta",
       "Type": "float",
-      "InitialValue": "41.4",
+      "InitialValue": "429.3",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "Id": "d450424f9d08458caa5c05e4fca66f11",
+      "Name": "SumHeights",
+      "Type": "float",
+      "InitialValue": "100.554895447605",
       "Description": "Visualize the output of node."
     }
   ],
@@ -204,7 +255,7 @@
       "MaximumValue": 100.0,
       "MinimumValue": 0.0,
       "StepValue": 0.1,
-      "InputValue": 47.782,
+      "InputValue": 76.4,
       "Id": "674a66ef4b064aa0832211b4370190ed",
       "Inputs": [],
       "Outputs": [
@@ -348,7 +399,7 @@
       "MaximumValue": 100.0,
       "MinimumValue": 0.0,
       "StepValue": 0.1,
-      "InputValue": 65.8,
+      "InputValue": 22.1,
       "Id": "3fa621d77573488192b49ef9542ed951",
       "Inputs": [],
       "Outputs": [
@@ -672,7 +723,7 @@
       "MaximumValue": 100.0,
       "MinimumValue": 0.0,
       "StepValue": 0.1,
-      "InputValue": 41.400000000000006,
+      "InputValue": 88.7,
       "Id": "f3b80d60acc3475293793b2a46450733",
       "Inputs": [],
       "Outputs": [
@@ -751,6 +802,42 @@
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
+        },
+        {
+          "Id": "44759730a3c14020af013a5b29da8099",
+          "Name": "item1",
+          "Description": "Item Index #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f25771af384e4cd4a2e0145ebb0c48db",
+          "Name": "item2",
+          "Description": "Item Index #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ecde080f847b4c7c978a9c159f515a71",
+          "Name": "item3",
+          "Description": "Item Index #3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "88ddf6bbe4254493ac299b4a132ac0ab",
+          "Name": "item4",
+          "Description": "Item Index #4",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
         }
       ],
       "Outputs": [
@@ -825,6 +912,298 @@
       ],
       "Replication": "Auto",
       "Description": "Find the sum of a series of numbers\n\nMath.Sum (values: double[]): double"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.Project@Autodesk.DesignScript.Geometry.Geometry,Autodesk.DesignScript.Geometry.Vector",
+      "Id": "c5d8dea84de348c5bb813e99948ed1b1",
+      "Inputs": [
+        {
+          "Id": "c4a679c17efc477ba6fb20878563380b",
+          "Name": "point",
+          "Description": "Autodesk.DesignScript.Geometry.Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c5413f519c7444bbb3a9fdb95cb6e8d0",
+          "Name": "baseGeometry",
+          "Description": "Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "79d4b4b56d7a4c55aeb87dbeca533478",
+          "Name": "projectionDirection",
+          "Description": "Vector",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9e78e8013d8c4f39a404fc371d3a02f0",
+          "Name": "Geometry[]",
+          "Description": "Geometry[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Project another piece of Geometry onto this along a given direction Vector\n\nPoint.Project (baseGeometry: Geometry, projectionDirection: Vector): Geometry[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Vector.ZAxis",
+      "Id": "49784e5cb5a14865aabe1a6d47e015dd",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "069668c3d3124e94ae797be4265f68b2",
+          "Name": "Vector",
+          "Description": "Vector",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the canonical Z axis Vector (0,0,1)\n\nVector.ZAxis ( ): Vector"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "d450424f9d08458caa5c05e4fca66f11",
+      "Inputs": [
+        {
+          "Id": "f295518d52394b1390ee7e9c0ec3c3cb",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b46463eca3ab4f91a9d51bd695799a0c",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.Z",
+      "Id": "6456b102bdd341fa88e421944f6ec393",
+      "Inputs": [
+        {
+          "Id": "6fd8fdd107aa4e9e8665e95d680671a8",
+          "Name": "point",
+          "Description": "Autodesk.DesignScript.Geometry.Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d1ce84ab3ac54618ae2bbaabeb39e823",
+          "Name": "double",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the Z component of a Point\n\nPoint.Z: double"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Flatten@var[]..[],int",
+      "Id": "e9b931c7c8134c4d9b95d0d4d55a8ad5",
+      "Inputs": [
+        {
+          "Id": "1fb5445f9ac44d2bbc4c3c48a5ecc792",
+          "Name": "list",
+          "Description": "List to flatten.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "52dd75987170416db93730a174164d49",
+          "Name": "amt",
+          "Description": "Layers of nesting to remove.\n\nint\nDefault value : -1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0c489345797246c0ad02fc2a7687a73e",
+          "Name": "var[]..[]",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Flattens a nested list of lists by a certain amount.\n\nList.Flatten (list: var[]..[], amt: int = -1): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.Math.Sum@double[]",
+      "Id": "9ea41493cbbe4b3185fe2b93a52969bb",
+      "Inputs": [
+        {
+          "Id": "91c9f87d530e48d2a0d668ca18c048d2",
+          "Name": "values",
+          "Description": "The numbers to sum\n\ndouble[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0c89b8b9884c401bb1eab0663e8981d9",
+          "Name": "sum",
+          "Description": "The sum of the values",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Find the sum of a series of numbers\n\nMath.Sum (values: double[]): double"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "InputValue": 85.0,
+      "Id": "142c5c517fb14c7fb734c255d88b0e4c",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "1701c7d54f41455e8b655d5d5430ecba",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "InputValue": 80.0,
+      "Id": "44ec22588f654f2abf6310caaac49e80",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "90e36bea58cf4e3da8ad4c66f289e75d",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "InputValue": 89.4,
+      "Id": "f0414b98c7d7469d8f30d046a07ec036",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "ef1e012f3da04f8d888f46e7954bfe05",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "InputValue": 86.2,
+      "Id": "33e68d086ce04836ad955aff537e61be",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "a7ed2ed4a19947348c3b1bda22771353",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
     }
   ],
   "Connectors": [
@@ -909,6 +1288,11 @@
       "Id": "083871337db747829286afae31e5cecf"
     },
     {
+      "Start": "0510adc1d5614e219aee3dfb150731ac",
+      "End": "c5413f519c7444bbb3a9fdb95cb6e8d0",
+      "Id": "dc9d42783d864cb0a976f53d1bda2e12"
+    },
+    {
       "Start": "4e71402cfea644c18629359340dcc88e",
       "End": "00be5b2732774c288c3ccafe127df105",
       "Id": "7c21deaa7f3048a18aac0b307a8db870"
@@ -917,6 +1301,11 @@
       "Start": "c2bb3591013547ae8cfad54f76c7290d",
       "End": "db48d8d2bde84cfeb2ad28cb7c36fd5c",
       "Id": "3116208155c644c3b0a01c84cb020d99"
+    },
+    {
+      "Start": "dad5b44c16ba417687c1fbc306a6b6b2",
+      "End": "c4a679c17efc477ba6fb20878563380b",
+      "Id": "37255ad67bfd40a8ade81b59895a48b6"
     },
     {
       "Start": "c8a6ad227c7340b18d1a7b2cc8e02681",
@@ -942,6 +1331,56 @@
       "Start": "beaa9e6a924a4ad8867ac3f1ad391d02",
       "End": "fbb522ea24034b71ac6a44b0e479edc5",
       "Id": "fc0fe3387ee74f6e9c3f46c7bc4197d0"
+    },
+    {
+      "Start": "9e78e8013d8c4f39a404fc371d3a02f0",
+      "End": "24d99ca53e354cb3aea0ff2e8cec9e7a",
+      "Id": "90b0a198a6174e7098110c1335254609"
+    },
+    {
+      "Start": "9e78e8013d8c4f39a404fc371d3a02f0",
+      "End": "6fd8fdd107aa4e9e8665e95d680671a8",
+      "Id": "0777decf96a142f4adffffb0cc955153"
+    },
+    {
+      "Start": "069668c3d3124e94ae797be4265f68b2",
+      "End": "79d4b4b56d7a4c55aeb87dbeca533478",
+      "Id": "8f0e53f53d394c6dae1e7357ba3cb6c4"
+    },
+    {
+      "Start": "d1ce84ab3ac54618ae2bbaabeb39e823",
+      "End": "1fb5445f9ac44d2bbc4c3c48a5ecc792",
+      "Id": "7678abef50bd4165a11441e1be800893"
+    },
+    {
+      "Start": "0c489345797246c0ad02fc2a7687a73e",
+      "End": "91c9f87d530e48d2a0d668ca18c048d2",
+      "Id": "00d0b113e9e541b1acba96db2f2023d9"
+    },
+    {
+      "Start": "0c89b8b9884c401bb1eab0663e8981d9",
+      "End": "f295518d52394b1390ee7e9c0ec3c3cb",
+      "Id": "2dbdad99c9f64f7a80e118c6a9f1c0e4"
+    },
+    {
+      "Start": "1701c7d54f41455e8b655d5d5430ecba",
+      "End": "44759730a3c14020af013a5b29da8099",
+      "Id": "15c7e104e44a4204a10c36b16f9bc927"
+    },
+    {
+      "Start": "90e36bea58cf4e3da8ad4c66f289e75d",
+      "End": "f25771af384e4cd4a2e0145ebb0c48db",
+      "Id": "8e75c4fd909c4c02996ca5dab72a14a2"
+    },
+    {
+      "Start": "ef1e012f3da04f8d888f46e7954bfe05",
+      "End": "ecde080f847b4c7c978a9c159f515a71",
+      "Id": "80d3d9801c92437c8f211d6e9059fdd9"
+    },
+    {
+      "Start": "a7ed2ed4a19947348c3b1bda22771353",
+      "End": "88ddf6bbe4254493ac299b4a132ac0ab",
+      "Id": "47b2a1f2c2b048579701e635e0d52a79"
     }
   ],
   "Dependencies": [],
@@ -957,15 +1396,15 @@
     },
     "Camera": {
       "Name": "Background Preview",
-      "EyeX": 140.87121011823163,
-      "EyeY": 71.650580363739437,
-      "EyeZ": 24.340604196369263,
-      "LookX": -161.63830576603507,
-      "LookY": -2.48193665034168,
-      "LookZ": -3.3558359576675443,
-      "UpX": 0.19932498099100407,
-      "UpY": 0.97992470462085024,
-      "UpZ": 0.0041382637321074672
+      "EyeX": 112.71888607097071,
+      "EyeY": 49.78574113975943,
+      "EyeZ": 2.2820720166152642,
+      "LookX": -132.64042735457193,
+      "LookY": -6.6731590757394983,
+      "LookZ": -2.7537996853366851,
+      "UpX": 0.16501204668122682,
+      "UpY": 0.9862856015372542,
+      "UpZ": 0.003425879509666449
     },
     "NodeViews": [
       {
@@ -1115,8 +1554,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2078.3278122346737,
-        "Y": -82.061107020605391
+        "X": 2062.2023737779728,
+        "Y": -138.500141619058
       },
       {
         "ShowGeometry": true,
@@ -1135,8 +1574,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2080.9971371494403,
-        "Y": -173.67588302505703
+        "X": 2064.8716986927393,
+        "Y": -230.11491762350965
       },
       {
         "ShowGeometry": true,
@@ -1155,8 +1594,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2302.0159134110922,
-        "Y": -160.02779672438965
+        "X": 2285.8904749543917,
+        "Y": -216.46683132284227
       },
       {
         "ShowGeometry": true,
@@ -1175,8 +1614,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": true,
         "Excluded": false,
-        "X": 2914.2458281912996,
-        "Y": 255.44326385950217
+        "X": 2835.7706621122961,
+        "Y": 71.266853674087031
       },
       {
         "ShowGeometry": true,
@@ -1187,6 +1626,106 @@
         "Excluded": false,
         "X": 1399.2311055826603,
         "Y": 317.91315736993272
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.Project",
+        "Id": "c5d8dea84de348c5bb813e99948ed1b1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1510.3181549741103,
+        "Y": -160.4273245568279
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Vector.ZAxis",
+        "Id": "49784e5cb5a14865aabe1a6d47e015dd",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1304.7188146511755,
+        "Y": -19.329738060696172
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "SumHeights",
+        "Id": "d450424f9d08458caa5c05e4fca66f11",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": true,
+        "Excluded": false,
+        "X": 2907.9888697838314,
+        "Y": -293.47750304704272
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Point.Z",
+        "Id": "6456b102bdd341fa88e421944f6ec393",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2021.7423194977423,
+        "Y": -23.479687727698945
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List.Flatten",
+        "Id": "e9b931c7c8134c4d9b95d0d4d55a8ad5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2310.9772805712246,
+        "Y": -41.356780986070362
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Math.Sum",
+        "Id": "9ea41493cbbe4b3185fe2b93a52969bb",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2621.908303623652,
+        "Y": -180.35838179492771
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "pt1 delta y",
+        "Id": "142c5c517fb14c7fb734c255d88b0e4c",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 186.87015204614295,
+        "Y": -97.823419471084577
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "pt2 delta y",
+        "Id": "44ec22588f654f2abf6310caaac49e80",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 184.26450321395023,
+        "Y": -34.4918282579612
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "pt3 delta y",
+        "Id": "f0414b98c7d7469d8f30d046a07ec036",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 184.56785026610964,
+        "Y": 19.143110007321553
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "pt4 delta y",
+        "Id": "33e68d086ce04836ad955aff537e61be",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 192.62851967654149,
+        "Y": 80.535370630876912
       }
     ],
     "Annotations": [
@@ -1229,7 +1768,7 @@
         "Left": 703.23636781718176,
         "Top": -183.15748996252952,
         "Width": 434.36842840555926,
-        "Height": 233.47837428649885,
+        "Height": 250.0,
         "FontSize": 36.0,
         "InitialTop": -130.15748996252952,
         "InitialHeight": 180.47837428649885,
@@ -1242,13 +1781,13 @@
         "Nodes": [
           "c559639d2f744792b22731067b227b0f"
         ],
-        "Left": 2904.2458281912996,
-        "Top": 202.44326385950217,
+        "Left": 2825.7706621122961,
+        "Top": 18.266853674087031,
         "Width": 123.45,
         "Height": 162.0,
         "FontSize": 36.0,
-        "InitialTop": 255.44326385950217,
-        "InitialHeight": 316.787068801361,
+        "InitialTop": 71.266853674087031,
+        "InitialHeight": 145.0,
         "TextblockHeight": 43.0,
         "Background": "#FFFFAA45"
       },
@@ -1274,16 +1813,18 @@
         "Nodes": [
           "43648dd9d5a44edd94819e8ca40a33fc",
           "04eed8bf3482454184b79001e633a45c",
-          "bd1e12719aa14cb1b7b32ade19bd1499"
+          "bd1e12719aa14cb1b7b32ade19bd1499",
+          "49784e5cb5a14865aabe1a6d47e015dd",
+          "c5d8dea84de348c5bb813e99948ed1b1"
         ],
-        "Left": 2068.3278122346737,
-        "Top": -269.67588302505703,
-        "Width": 472.68810117641851,
-        "Height": 280.61477600445164,
+        "Left": 1294.7188146511755,
+        "Top": -283.11491762350965,
+        "Width": 1230.1716603032162,
+        "Height": 356.78517956281348,
         "FontSize": 36.0,
-        "InitialTop": -173.67588302505703,
-        "InitialHeight": 391.8170415488712,
-        "TextblockHeight": 86.0,
+        "InitialTop": -230.11491762350965,
+        "InitialHeight": 236.61477600445164,
+        "TextblockHeight": 43.0,
         "Background": "#FFFFAA45"
       },
       {
@@ -1513,8 +2054,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -511.0073648652974,
-    "Y": 224.8577463851494,
-    "Zoom": 0.62053090847444459
+    "X": 78.21304311648052,
+    "Y": -278.74354806797021,
+    "Zoom": 0.89539327576205652
   }
 }
