@@ -2,7 +2,7 @@
   "Uuid": "edf2548c-6fa2-47df-8b45-6f0b881e2ad2",
   "IsCustomNode": false,
   "Description": null,
-  "Name": "2d Hill Climbing 5 point designscript",
+  "Name": "05_2d Hill Climbing 5 point designscript",
   "ElementResolver": {
     "ResolutionMap": {
       "Vector": {

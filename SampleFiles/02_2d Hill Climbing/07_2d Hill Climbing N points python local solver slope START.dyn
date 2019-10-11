@@ -2,7 +2,7 @@
   "Uuid": "edf2548c-6fa2-47df-8b45-6f0b881e2ad2",
   "IsCustomNode": false,
   "Description": null,
-  "Name": "2d Hill Climbing N points python local solver slope START",
+  "Name": "07_2d Hill Climbing N points python local solver slope START",
   "ElementResolver": {
     "ResolutionMap": {
       "Curve": {
